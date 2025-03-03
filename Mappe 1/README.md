@@ -3,7 +3,8 @@
 
 Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologiske API-er. Programmet henter, prosesserer og analyserer værinformasjon for Ceciliekruna i Stryn ved hjelp av Python.
 
-![alt text](resources/image.png)
+
+![bilde](resources/IMG_7761.JPG)
 
 ## Innhold
 
