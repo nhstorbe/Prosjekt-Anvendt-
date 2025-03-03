@@ -20,7 +20,10 @@ Spørsmål for øvingstime:
 - Hva er det som ønskes å oppnå ut ifra oppgave 2?
 - Samme spørsmål for oppgave 3?
 - Hvordan vil en vise at vi har tatt i bruk list comprehensions, iterators og pandassqlfd?
-- 
+- Hvordan skal vi utforske og forstå dataens struktur og innhold?
+- Hva for noe svar ønskes det?
+- Skal spørsmålene nederst på hver oppgavetekst besvares i relevant kodefil, samlet pdf, eller i det hele tatt? 
+
 
 
 [Test at utviklingsmiljøet fungerer](src/letsgo.ipynb)
