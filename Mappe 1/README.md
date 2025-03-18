@@ -4,7 +4,8 @@
 Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologiske API-er. Programmet henter, prosesserer og analyserer værinformasjon for Ceciliekruna i Stryn ved hjelp av Python.
 
 
-![bilde](resources/IMG_7761.JPG)
+![bilde](resources/IMG_7762.JPG)
+
 
 ## Innhold
 
@@ -24,6 +25,13 @@ Spørsmål for øvingstime:
 - Hvordan skal vi utforske og forstå dataens struktur og innhold?
 - Hva for noe svar ønskes det?
 - Skal spørsmålene nederst på hver oppgavetekst besvares i relevant kodefil, samlet pdf, eller i det hele tatt? 
+- Når får vi tilbakemelding på mappe 1? Med tanke på oppfølgningsfeil 
+
+hente dataen 
+filtrere dataen, pandas null 
+søke opp hvordan filtrere store mengder vær data pandas.null 
+gjøre det generelt mer clean 
+gjøre det mer finere 
 
 
 

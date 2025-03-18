@@ -7,7 +7,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))  # Finner stien til 'src'
 file_path = os.path.join(base_dir, "..", "data", "weather.json")
 
 with open(file_path, "r", encoding="utf-8") as f:
-    data = json.load(f)
+    data = json.load(f) # Leser inn JSON-dataene fra filen
 
 json.dumps(data, indent=4) # Formaterer JSON-dataene for å gjøre dem lettere å lese
 
