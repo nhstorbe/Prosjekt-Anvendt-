@@ -35,10 +35,13 @@ gjøre det mer finere
 
 
 
-[Test at utviklingsmiljøet fungerer](src/letsgo.ipynb)
+[Test at utviklingsmiljøet fungerer](src/1_utviklingsmiljø.ipynb)
 
 ## ✉️ Oppgave 2: Datainnsamling
 
-
+[CSV fil med værdata i Stryn fra 1 Mars 2024 til 1 Mars 2025](data/table.csv)
+- I tillegg til en csv fil som tar for seg historisk data har vi også tatt i bruk en API fra Meteoroliske institutt der vi samler inn sanntidsdata hver time for de neste 10 dagene. 
 
 ## 🤖 Oppgave 3: Databehandling
+
+
