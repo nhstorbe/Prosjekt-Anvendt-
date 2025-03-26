@@ -45,3 +45,28 @@ gjøre det mer finere
 ## 🤖 Oppgave 3: Databehandling
 
 
+
+
+
+
+
+
+
+
+
+
+##Datakilder
+
+Gjennom internett kan en finne en stor mengde brukbare kilder på relevant data til dette prosjektet. Av den grunn trenger en å spisse seg inn mot den mest relevante. Det viktigste kriteriet i relasjon til kildevalg for oss er kildeautoritet. Av den grunn så vi først på offentlige, og statlige kilder. Vi så av den grunn på [yr](https://www.yr.no), [NOAA](https://www.ncei.noaa.gov/cdo-web/datasets) og [Meterologiask institutt](https://www.met.no/en/free-meteorological-data). Vi valgte i første omgang disse nettstedene da de enten er internasjonalt annerkjente organisasjoner, eller statlige meterologiske institusjoner. Vi følte av den grunn at alle tre var pålitelige kilder med god autoritet og datatilgang. Da dataene fra sidene enten er hentet fra eller brukes til aktiv forskning har vi også god tiltro til kvaliteten på dataen. Vi valgte å bruke yr grunnet at de tok i bruk .json format, og at å få tak i dataen fra deres nettside var lettest. 
+
+Vi vlagte .json format av flere grunner. De grunnleggende formene en ofte tar i bruk for prosjekter av denne typen virket å være .csv, .json og .xml. Da vi ikke har mye kunnskap til .xml, og formatet har en mulig kompleksitet som går langt forbi våre krav, på god bekostning av filstørrelse. .csv(comma seperated values)-filer er den simpleste typen data-fil som er vanlig å ta i bruk. En .csv-fil inneholder linjer med data separert med "," og er derfor svært leselige for mennesker, og veldig lett å sette inn i excel-filer. .json(Javascript Object Notation)-filer er tekstbaserte, simple og effektive. .json er ikke like effektive størrelsesmessig som .csv, men nært..json er bygd opp av arrays og objekter. En ser ofte objekt etter objekt som inneholder lik data om tilsvarende situasjon over tid, f.eks 
+
+{
+    "temp": "30*C",
+    "wind": "5m/s",
+    "wind.direction": "NE"
+}
+
+.json er også ganske leselig for mennesker, og relativt lett å håndtere datamessig. Formatet er også flexibelt og bredt kompatibelt med forskjellige formler. Vi valgte .json fordi det ga økt flexibilitet og kompatibilitet i forhold til .csv, med minimal økninig i filstørrelse og leselighet. 
+
+Vi har brukt en API støttet .json fil nettopp fordi vi da alltid vil ha filen automatisk oppdatert.  
