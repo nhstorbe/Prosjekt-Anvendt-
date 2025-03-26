@@ -1,7 +1,7 @@
 
 # 🌍 Miljødataanalyseapplikasjon
 
-Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologiske API-er. Programmet henter, prosesserer og analyserer værinformasjon for Ceciliekruna i Stryn ved hjelp av Python.
+Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologiske API-er. Programmet henter, prosesserer og analyserer værinformasjon i Stryn ved hjelp av Python.
 
 
 ![bilde](resources/IMG_7762.JPG)
