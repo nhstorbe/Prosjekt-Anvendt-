@@ -35,7 +35,7 @@ gjøre det mer finere
 
 
 
-[Test at utviklingsmiljøet fungerer](src/1_utviklingsmiljø.ipynb)
+[Test at utviklingsmiljøet fungerer](src/utviklingsmiljø.ipynb)
 
 ## ✉️ Datainnsamling og databehandling av historisk værdata
 
