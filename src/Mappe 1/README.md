@@ -17,29 +17,13 @@ Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologi
 
 ## 🛠️ Oppgave 1 Utviklings miljø 
 
-Spørsmål for øvingstime:
-- Hvordan fungerer er PEP 8?
-- Hva er det som ønskes å oppnå ut ifra oppgave 2?
-- Samme spørsmål for oppgave 3?
-- Hvordan vil en vise at vi har tatt i bruk list comprehensions, iterators og pandassqlfd?
-- Hvordan skal vi utforske og forstå dataens struktur og innhold?
-- Hva for noe svar ønskes det?
-- Skal spørsmålene nederst på hver oppgavetekst besvares i relevant kodefil, samlet pdf, eller i det hele tatt? 
-- Når får vi tilbakemelding på mappe 1? Med tanke på oppfølgningsfeil 
-
-hente dataen 
-filtrere dataen, pandas null 
-søke opp hvordan filtrere store mengder vær data pandas.null 
-gjøre det generelt mer clean 
-gjøre det mer finere 
-
-
-
+- Testing av utviklingsmiljøet:
 [Test at utviklingsmiljøet fungerer](src/utviklingsmiljø.ipynb)
 
 ## ✉️ Datainnsamling og databehandling av historisk værdata
 
-[CSV fil med værdata i Stryn fra 1 Mars 2024 til 1 Mars 2025](data/table.csv)
+- [CSV fil med værdata i Stryn fra 1 Mars 2024 til 1 Mars 2025](data/table.csv)
+- [Datainnsamling og databehandling av historisk værdata](src/data_behandling_historisk.ipynb)
 - I tillegg til en csv fil som tar for seg historisk data har vi også tatt i bruk en API fra Meteoroliske institutt der vi samler inn sanntidsdata hver time for de neste 10 dagene. 
 
 Gjennom internett kan en finne en stor mengde brukbare kilder på relevant data til dette prosjektet. Av den grunn trenger en å spisse seg inn mot den mest relevante. Det viktigste kriteriet i relasjon til kildevalg for oss er kildeautoritet. Av den grunn så vi først på offentlige, og statlige kilder. Vi så av den grunn på [yr](https://www.yr.no), [NOAA](https://www.ncei.noaa.gov/cdo-web/datasets) og [Meterologiask institutt](https://www.met.no/en/free-meteorological-data). Vi valgte i første omgang disse nettstedene da de enten er internasjonalt annerkjente organisasjoner, eller statlige meterologiske institusjoner. Vi følte av den grunn at alle tre var pålitelige kilder med god autoritet og datatilgang. Da dataene fra sidene enten er hentet fra eller brukes til aktiv forskning har vi også god tiltro til kvaliteten på dataen. Vi valgte å bruke meterologisk institutt for fremtidsrettet dataanalyse grunnet at de tok i bruk .json format, og at å få tak i dataen fra deres nettside var lettest. For historisk ananlyse, hvor vi ikke trengte å holde dataen oppdatert, men heller ønsekt en større mengde tilgjengelig, valgte vi å ta i bruk .csv fra yr. Hvorfor utdyper vi under. 
@@ -59,6 +43,8 @@ For den historiske dataen ga det mening å ta i bruk en .csv fil fordi den er mi
 Vi har brukt en API som henter ned en .json på spesifiserte lengde- og breddegrader fra meterologisk institutt sin nettside. Den tillater oss å kjøre programmet med oppdatert forecasts data hver gang programmet kjøres. Vi henter ned tidspunkt, temperatur, regnmengde og vindhastighet. Siden vi har de samme datapunktene i vår historiske data kan vi bruke alle for analyser. Siden vi har tilsvarende historisk data kan vi gjennomføre analyser for å både se om vi sier oss enige med våre analytiske verktøy, men også for å kunne bruke historisk data for å hjelpe å erstatte manglende data i .json datasettet. 
 
 ## 🤖 Datainnsamling og databehandling av fremtidig værdata
+
+[Datainnsamling og databehandling av fremtidig værdata](src/data_behandling_fremtid.ipynb)
 
 Vi har brukt flere forskjellige metoder for å håndtere manglende verdier i verdissettet. Ettersom vi har forventet noe manglende data er dette noe vi har skånet oss mot i større grad. Både den historiske og fremtidige dataen blir behandlet med fillna for å identifisere og erstatte manglende data. I begge filene bruker vi gjennomsnittet for å erstatte den manglende verdien, men i den historiske dataen har vi også satt opp mulighet for å erstatte den med 0 eller medianen. Den historiske dataen er blitt gitt flere muligheter, da datasettet for å skape disse er større. Grunnen til det er at om en tar gjennomsnittsdataen, selv fra samme tidspunkt andre dager, bliir det vanskelig å gjenskape rimelig data. Været endrer seg mye fra dag til dag, noe som gjør det vanskelig. I fremtiden kunne vi eventuelt sett på å lage analysere for å finne en rimelig graf for temperaturendring på tvers av et døgn, for så å sette den over de nærmeste datapunktene. Vi kunne også sett på historisk værdata for samme tidsperiode i tidligere år. Derimot hadde det blitt komplekst, og vi amngler den relevante datamengden, så metodene vi for nå har tatt i bruk er gode nok for en tilnæring. 
 
