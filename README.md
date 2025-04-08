@@ -43,3 +43,7 @@ Anvending av erfaringene
 #
 ### Konklusjon
 skrives til slutt
+
+
+### KI deklarasjon
+- [KI deklarasjon](filepath)

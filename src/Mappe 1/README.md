@@ -1,6 +1,6 @@
 
 # 🌍 Mappe 1: Datainnsamling og forberedelse
-I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. Gruppen har brukt værdata fra de følgende plassene for å analysere de historiske dataene:
+I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. 
 
 
 #
