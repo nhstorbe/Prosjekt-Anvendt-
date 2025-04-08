@@ -2,26 +2,32 @@
 # 🌍 Mappe 1: Datainnsamling og forberedelse
 I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. Gruppen har brukt værdata fra de følgende plassene for å analysere de historiske dataene:
 
-- [CSV tabel: Kautokeino](../../data/Kautekeno_værdata.csv)
-- [CSV tabel: Oslo](../../data/Oslo_værdata.csv)
-- [CSV tabel: Stryn](../../data/Kroken_værdata.csv)
-
-
-Gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Oppgavene blir beskrevet og gjennomført i hver sin respektive fil. 
-
 
 #
-### Innhold i mappen
+### Oversikt over Mappe 1
+Gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Oppgavene blir beskrevet og gjennomført i hver sin respektive fil. 
 - [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
 - [Databehandling av historisk data](../Mappe%201/data_behandling_fremtid.ipynb)
 - [Databehandling av fremtidsrettet data](../Mappe%201/data_behandling_fremtid.ipynb)
 
-#
-### ✉️ Datainnsamling og databehandling av historisk værdata
 
-- [CSV fil med værdata i Stryn fra 1 Mars 2024 til 1 Mars 2025](data/table.csv)
-- [Datainnsamling og databehandling av historisk værdata](src/data_behandling_historisk.ipynb)
-- I tillegg til en csv fil som tar for seg historisk data har vi også tatt i bruk en API fra Meteoroliske institutt der vi samler inn sanntidsdata hver time for de neste 10 dagene. 
+#
+### Testing av utviklingsmiljø
+Oppgave 1 av mappen var å sette opp et utviklingsmiljø. Det ble gjort i filen under.
+- [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
+
+
+
+#
+### Datainnsamling av historisk data
+Tilhørende filer
+- [Datainnsamling av historisk data](../Mappe%201/data_behandling_historisk.ipynb)
+- [CSV tabel - Tromsø](../../data/Kautokeino.csv)
+- [CSV tabel - Oslo](../../data/Oslo.csv)
+- [CSV tabel - Stryn](../../data/Stryn.csv)
+
+
+
 
 Gjennom internett kan en finne en stor mengde brukbare kilder på relevant data til dette prosjektet. Av den grunn trenger en å spisse seg inn mot den mest relevante. Det viktigste kriteriet i relasjon til kildevalg for oss er kildeautoritet. Av den grunn så vi først på offentlige, og statlige kilder. Vi så av den grunn på [yr](https://www.yr.no), [NOAA](https://www.ncei.noaa.gov/cdo-web/datasets) og [Meterologiask institutt](https://www.met.no/en/free-meteorological-data). Vi valgte i første omgang disse nettstedene da de enten er internasjonalt annerkjente organisasjoner, eller statlige meterologiske institusjoner. Vi følte av den grunn at alle tre var pålitelige kilder med god autoritet og datatilgang. Da dataene fra sidene enten er hentet fra eller brukes til aktiv forskning har vi også god tiltro til kvaliteten på dataen. Vi valgte å bruke meterologisk institutt for fremtidsrettet dataanalyse grunnet at de tok i bruk .json format, og at å få tak i dataen fra deres nettside var lettest. For historisk ananlyse, hvor vi ikke trengte å holde dataen oppdatert, men heller ønsekt en større mengde tilgjengelig, valgte vi å ta i bruk .csv fra yr. Hvorfor utdyper vi under. 
 
@@ -39,9 +45,10 @@ For den historiske dataen ga det mening å ta i bruk en .csv fil fordi den er mi
 
 Vi har brukt en API som henter ned en .json på spesifiserte lengde- og breddegrader fra meterologisk institutt sin nettside. Den tillater oss å kjøre programmet med oppdatert forecasts data hver gang programmet kjøres. Vi henter ned tidspunkt, temperatur, regnmengde og vindhastighet. Siden vi har de samme datapunktene i vår historiske data kan vi bruke alle for analyser. Siden vi har tilsvarende historisk data kan vi gjennomføre analyser for å både se om vi sier oss enige med våre analytiske verktøy, men også for å kunne bruke historisk data for å hjelpe å erstatte manglende data i .json datasettet. 
 
-## 🤖 Datainnsamling og databehandling av fremtidig værdata
-
-[Datainnsamling og databehandling av fremtidig værdata](src/data_behandling_fremtid.ipynb)
+#
+### Datainnsamling av fremtidsrettet data
+Tilhørende filer
+- [Datainnsamling av historisk data](../Mappe%201/data_behandling_fremtid.ipynb.ipynb)
 
 Vi har brukt flere forskjellige metoder for å håndtere manglende verdier i verdissettet. Ettersom vi har forventet noe manglende data er dette noe vi har skånet oss mot i større grad. Både den historiske og fremtidige dataen blir behandlet med fillna for å identifisere og erstatte manglende data. I begge filene bruker vi gjennomsnittet for å erstatte den manglende verdien, men i den historiske dataen har vi også satt opp mulighet for å erstatte den med 0 eller medianen. Den historiske dataen er blitt gitt flere muligheter, da datasettet for å skape disse er større. Grunnen til det er at om en tar gjennomsnittsdataen, selv fra samme tidspunkt andre dager, bliir det vanskelig å gjenskape rimelig data. Været endrer seg mye fra dag til dag, noe som gjør det vanskelig. I fremtiden kunne vi eventuelt sett på å lage analysere for å finne en rimelig graf for temperaturendring på tvers av et døgn, for så å sette den over de nærmeste datapunktene. Vi kunne også sett på historisk værdata for samme tidsperiode i tidligere år. Derimot hadde det blitt komplekst, og vi amngler den relevante datamengden, så metodene vi for nå har tatt i bruk er gode nok for en tilnæring. 
 
