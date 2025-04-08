@@ -1,6 +1,11 @@
 
 # 🌍 Mappe 1: Datainnsamling og forberedelse
-I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. 
+I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. Gruppen har brukt værdata fra de følgende plassene for å analysere de historiske dataene:
+
+- [CSV tabel: Kautokeino](../../data/Kautekeno_værdata.csv)
+- [CSV tabel: Oslo](../../data/Oslo_værdata.csv)
+- [CSV tabel: Stryn](../../data/Kroken_værdata.csv)
+
 
 Gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Oppgavene blir beskrevet og gjennomført i hver sin respektive fil. 
 
