@@ -1,26 +1,18 @@
 
-# 🌍 Miljødataanalyseapplikasjon
+# 🌍 Mappe 1: Datainnsamling og forberedelse
+I den første mappen i prosjektet var formålet å sette opp et utviklingsmiljø, samle inn data og behandle og analysere den. 
 
-Dette prosjektet analyserer værdata fra datakilden Yr, ved hjelp av meteorologiske API-er. Programmet henter, prosesserer og analyserer værinformasjon i Stryn ved hjelp av Python.
-
-
-![bilde](resources/IMG_7762.JPG)
+Gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Oppgavene blir beskrevet og gjennomført i hver sin respektive fil. 
 
 
-## Innhold
+#
+### Innhold i mappen
+- [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
+- [Databehandling av historisk data](../Mappe%201/data_behandling_fremtid.ipynb)
+- [Databehandling av fremtidsrettet data](../Mappe%201/data_behandling_fremtid.ipynb)
 
-- [Oppgave 1: Sett opp utviklingsmiljø](#Oppgave1)
-- [Oppgave 2: Datainnsamling](#Oppgave2)
-- [Oppgave 3: Databehandling](#Oppgave3)
-
----
-
-## 🛠️ Oppgave 1 Utviklings miljø 
-
-- Testing av utviklingsmiljøet:
-[Test at utviklingsmiljøet fungerer](src/utviklingsmiljø.ipynb)
-
-## ✉️ Datainnsamling og databehandling av historisk værdata
+#
+### ✉️ Datainnsamling og databehandling av historisk værdata
 
 - [CSV fil med værdata i Stryn fra 1 Mars 2024 til 1 Mars 2025](data/table.csv)
 - [Datainnsamling og databehandling av historisk værdata](src/data_behandling_historisk.ipynb)
