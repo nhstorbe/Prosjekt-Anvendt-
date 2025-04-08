@@ -22,8 +22,8 @@ Oppgave 1 av mappen var å sette opp et utviklingsmiljø. Det ble gjort i filen 
 ### Datainnsamling av historisk data
 Tilhørende filer
 - [Datainnsamling av historisk data](../Mappe%201/data_behandling_historisk.ipynb)
-- [CSV tabel - Tromsø](../../data/Kautokeino.csv)
 - [CSV tabel - Oslo](../../data/Oslo.csv)
+- [CSV tabel - Tromsø](../../data/Tromsø.csv)
 - [CSV tabel - Stryn](../../data/Stryn.csv)
 
 
