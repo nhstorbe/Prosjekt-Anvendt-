@@ -11,7 +11,7 @@ Bildet er hentet fra ([AlphaTarget](https://alphatarget.com/resources/a-primer-o
 ### Innhold 
 Gruppen har valgt å dele alle oppgavene i to deler, da analysen gjennomføres med to ulike datasett: historiske data og fremtidsrettet data. Begge datasettene er hentet fra Yr.no og analyseres separat. Oppgavene og implementeringen er dokumentert i følgende filer: 
 
-Besvarelse for oppgave 1
+Besvarelse for oppgave 1:
 - [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
 
 Besvarelse for oppgave 2 og oppgave 3:
@@ -45,6 +45,13 @@ For fremtidsrettet data ble Yr sitt API benyttet. Dataen ble hentet i JSON-forma
 3) I forhold til vanlig Pandas tillater Pandas SQL håndtering med mer SQL orientert språk. Pandas SQL tillater også mer fleksibelitet og alternativer ved datahåndteringen, i tilloegg til at koden blir mer intuitiv å skrive. Kodens leslighet gjelder spesielt når en ønsker å jobbe inn flere kriterier samtidig. For eksempel blir det at vi henter ut middelvind over 5 i verdi gjort mer leslig og oversiktelig enn i vanlig pandas. 
 
 4) De to hovedproblemene datasett pleier å inkludere er manglende verdier, og uteliggende verdier. Slik var situasjonen for våre datasett også. Vi har i begge datasettene filtrert for manglende verdier via den tidligere nevnte fillna. I historisk databehandling har vi også filtrert for ekstremverider, via funksjonen ekstremVerdier. Da den fremtidige dataen er skapt gjennom en vnasklig mattematisk prediktiv modell anser vi at om noen ekstremverdier har sluppet gjennom prosessen og utgjevningen meterologisk institutt har tatt i bruk er de nok verdt å beholde. Vi har også lagt inn automatisk rettende kode for formateringsfeil.
+
+
+#
+### Innhold i prosjekt
+- [Informasjon om mapper](/README.md)
+- [Mappe 1](/src/Mappe%201/README.md)
+- [Mappe 2](/src/Mappe%202/README.md)
 
 
 
