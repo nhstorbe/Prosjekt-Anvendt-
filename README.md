@@ -12,8 +12,8 @@ Bildet er hentet fra ([Teknologirådet](https://teknologiradet.no/publication/ge
 Prosjektet besto av to seperate mapper, der hver mappe fokuserte på ulike punkter. _Mappe 1_ tok for seg en generell miljødataanalyse, mens _Mappe 2_ tok for seg analysering av dataen gjennom blant annet visualisering. Gruppen har valgt å bruke værdata fra [Yr.no](https://hjelp.yr.no/hc/no/articles/206550539-Om-Yr) for å løse alle oppgavene i prosjektet. Yr.no drives i samarbeid mellom NRK og Meteorologisk institutt, og anses som en pålitelig datakilde ettersom begge aktørene er statlige institusjoner. I tillegg har gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Pythonfilene som slutter på (...historisk.ipynb) beskriver historisk data, mens filer som slutter på (...fremtid.ipynb) beskriver de fremtidsrettede dataene. Grunnen til at gruppen har gjort det på denne måte, blir forklart under refleksjonsdelen.
 
 Informasjon for hver mappe:
-- [Mappe 1](../Prosjekt-Anvendt-/src/Mappe%201/README.md)
-- [Mappe 2](../Prosjekt-Anvendt-/src/Mappe%202/README.md)
+- [Mappe 1](/src/Mappe%201/README.md)
+- [Mappe 2](/src/Mappe%202/README.md)
 
 #
 ### KI deklarasjon

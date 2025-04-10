@@ -15,13 +15,13 @@ Besvarelse for oppgave 1
 - [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
 
 Besvarelse for oppgave 2 og oppgave 3:
-- [Databehandling av historisk data](../Mappe%201/data_behandling_fremtid.ipynb)
-- [Databehandling av fremtidsrettet data](../Mappe%201/data_behandling_fremtid.ipynb)
+- [Databehandling av historisk data](/src/Mappe%201/data_behandling_historisk.ipynb)
+- [Databehandling av fremtidsrettet data](/src/Mappe%201/data_behandling_fremtid.ipynb)
 
 Tilhørende CSV-filer:
-- [CSV tabel - Oslo](../../data/Oslo.csv)
-- [CSV tabel - Tromsø](../../data/Tromsø.csv)
-- [CSV tabel - Stryn](../../data/Stryn.csv)
+- [CSV tabel - Oslo](/data/Oslo.csv)
+- [CSV tabel - Tromsø](/data/Tromsø.csv)
+- [CSV tabel - Stryn](/data/Stryn.csv)
 
 
 #
@@ -37,7 +37,7 @@ For fremtidsrettet data ble Yr sitt API benyttet. Dataen ble hentet i JSON-forma
  
 #
 ### Oppgave 3 - Databehandling
-1) For å håndtere manglende verdier i datasettet, benyttet vi flere metoder. I både ["Historisk databehnadling](../Mappe%201/data_behandling_historisk.ipynb) og ["Fremtidig databehandling"](../Mappe%201/data_behandling_fremtid.ipynb) startet vi med å undersøke om det fantes hull i dataene. Til dette brukte vi funksjoner som _check_NaN_counter(place)_ og _print(df.isnull().sum())_ for å identifisere antall manglende verdier i datasettet. Når manglende verdier ble oppdaget, tok vi i bruk Pandas-funksjonen fillna(), som erstatter NaN-verdier med spesifiserte verdier. I de fleste tilfeller brukte vi median som erstatning, men i behandlingen av historiske data testet vi også med gjennomsnitt og null som alternativer. Det er viktig å være klar over at slike metoder kan introdusere unøyaktigheter. Værdata varierer betydelig fra dag til dag, og det er derfor vanskelig å erstatte manglende verdier uten å risikere å forvrenge virkeligheten. Spesielt i tilfeller med ekstreme verdier i datasettet kan gjennomsnitt være en dårlig erstatning, ettersom det er svært sensitivt for slike avvik. I slike situasjoner kan median være et bedre valg, da den er mer robust mot ekstreme verdier og gir et mer representativt bilde av datasettet.
+1) For å håndtere manglende verdier i datasettet, benyttet vi flere metoder. I både ["Historisk databehnadling](/src/Mappe%201/data_behandling_historisk.ipynb) og ["Fremtidig databehandling"](/src/Mappe%201/data_behandling_fremtid.ipynb) startet vi med å undersøke om det fantes hull i dataene. Til dette brukte vi funksjoner som _check_NaN_counter(place)_ og _print(df.isnull().sum())_ for å identifisere antall manglende verdier i datasettet. Når manglende verdier ble oppdaget, tok vi i bruk Pandas-funksjonen fillna(), som erstatter NaN-verdier med spesifiserte verdier. I de fleste tilfeller brukte vi median som erstatning, men i behandlingen av historiske data testet vi også med gjennomsnitt og null som alternativer. Det er viktig å være klar over at slike metoder kan introdusere unøyaktigheter. Værdata varierer betydelig fra dag til dag, og det er derfor vanskelig å erstatte manglende verdier uten å risikere å forvrenge virkeligheten. Spesielt i tilfeller med ekstreme verdier i datasettet kan gjennomsnitt være en dårlig erstatning, ettersom det er svært sensitivt for slike avvik. I slike situasjoner kan median være et bedre valg, da den er mer robust mot ekstreme verdier og gir et mer representativt bilde av datasettet.
 
 
 2) Vi har brukt list comprehentions for å hente ut og analysere temperaturdata (datasettet vi fokuserer mest på) i både fremtidig og historisk analyse. Historisk sett brukte vi det hovedsakelig for å hente ut og filtrere dataen tidlig i koden. Fremtidig sett brukte vi det veldig lignende, men uttrykket på en nogenlunde annerledes metode. Et sterkt punkt for list comprehentions er å hente ut og analysere data, noe vi fikk sterk nytte av. 
