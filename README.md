@@ -3,14 +3,26 @@
 ## Bakgrunn for prosjektet
 I emnet TDT4114 studentene fått i oppgave å utvikle en applikasjon som henter, analyserer og visualiserer miljødata fra åpne kilder. Prosjektet skulle utvikle ferdigheter og gi relevant kunnskap innen kompleks datavitenskap. I dagens næringsliv er evnen til å kunne ta i bruk historisk data og prognoser aldeles viktig når det kommer til strategiske beslutninger for virksomheter.
 
+![Bilde](/resources/Bilde1.webp)
+Bildet er hentet fra ([Teknologirådet](https://teknologiradet.no/publication/generativ-kunstig-intelligens-og-ytringsfrihet/), 2023)
+
+
 #
 ### Metode og utførelse
-Prosjektet besto av to seperate mapper, der hver mappe fokuserte på ulike punkter. [Mappe 1](../Prosjekt-Anvendt-/src/Mappe%201/README.md) tok for seg en generell miljødataanalyse, mens [Mappe 2](../Prosjekt-Anvendt-/src/Mappe%202/README.md) tok for seg analysering av dataen gjennom blant annet visualisering. Gruppen har valgt å bruke værdata fra [Yr.no](https://hjelp.yr.no/hc/no/articles/206550539-Om-Yr) for å løse alle oppgavene i prosjektet. Yr.no drives i samarbeid mellom NRK og Meteorologisk institutt, og anses som en pålitelig datakilde ettersom begge aktørene er statlige institusjoner. I tillegg har gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Pythonfilene som slutter på (...historisk.ipynb) beskriver historisk data, mens filer som slutter på (...fremtid.ipynb) beskriver de fremtidsrettede dataene. 
+Prosjektet besto av to seperate mapper, der hver mappe fokuserte på ulike punkter. _Mappe 1_ tok for seg en generell miljødataanalyse, mens _Mappe 2_ tok for seg analysering av dataen gjennom blant annet visualisering. Gruppen har valgt å bruke værdata fra [Yr.no](https://hjelp.yr.no/hc/no/articles/206550539-Om-Yr) for å løse alle oppgavene i prosjektet. Yr.no drives i samarbeid mellom NRK og Meteorologisk institutt, og anses som en pålitelig datakilde ettersom begge aktørene er statlige institusjoner. I tillegg har gruppen bestemt seg for å dele alle oppgavene i to deler, da alle oppgavene blir gjort to ganger med to ulike datasett. Det på  der både historisk data og fremtidsrettet data blir analysert, da dette var tilgjengelig på Yr sine nettsider. Pythonfilene som slutter på (...historisk.ipynb) beskriver historisk data, mens filer som slutter på (...fremtid.ipynb) beskriver de fremtidsrettede dataene. Grunnen til at gruppen har gjort det på denne måte, blir forklart under refleksjonsdelen.
 
+Informasjon for hver mappe:
+- [Mappe 1](../Prosjekt-Anvendt-/src/Mappe%201/README.md)
+- [Mappe 2](../Prosjekt-Anvendt-/src/Mappe%202/README.md)
+
+#
+### KI deklarasjon
+- [KI deklarasjon](filepath)
 
 #
 ### Refleksjon
 Reflekter: 
+Oppdeling av to separate filer
 Datainnsamling og datavisualisering 
 Datanalyse 
 Identifiser:
@@ -38,6 +50,8 @@ Forståelse for datavitenskap og miljøstudier
 
 Anvending av erfaringene 
 
+- [Refleksjonsnotat PDF](filepath)
+
 
 
 #
@@ -45,5 +59,3 @@ Anvending av erfaringene
 skrives til slutt
 
 
-### KI deklarasjon
-- [KI deklarasjon](filepath)

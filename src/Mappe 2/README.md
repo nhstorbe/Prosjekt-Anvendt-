@@ -2,13 +2,28 @@
 # 🌍 Mappe 2: Dataanalyse og visualisering
 I den andre mappen i prosjektet var formålet å visualisere dataen, beregne statistiske verdier og lage en prediktiv  analyse.
 
+![Bilde](/resources/maskinlæring.jpg)
+Bildet er hentet fra ([NTNU](https://www.ntnu.no/eit/ttk4852-utg%C3%85r), n.a.)
+
 
 #
 ### Innhold 
+#
+### Innhold 
 Gruppen har valgt å dele alle oppgavene i to deler, da analysen gjennomføres med to ulike datasett: historiske data og fremtidsrettet data. Begge datasettene er hentet fra Yr.no og analyseres separat. Oppgavene og implementeringen er dokumentert i følgende filer: 
+
+Besvarelse for oppgave 4, oppgave 5 og oppgave 6:
 - [Datavisualisering av historisk data](../Mappe%202/data_visualisering_historisk.ipynb)
 - [Datavisualisering av fremtidsrettet data](../Mappe%202/data_visualisering_fremtid.ipynb)
+
+Besvarelse for oppgave 7:
 - [Refleksjonsnotat](filepath)
+
+Tilhørende CSV-filer:
+- [CSV tabel - Oslo](../../data/Oslo.csv)
+- [CSV tabel - Tromsø](../../data/Tromsø.csv)
+- [CSV tabel - Stryn](../../data/Stryn.csv)
+
 
 
 #
@@ -45,7 +60,7 @@ Gruppen har valgt å dele alle oppgavene i to deler, da analysen gjennomføres m
 
 
 ### Oppgave 7 - Reflesjonsnotat
-legg ved PDF
+- [Refleksjonsnotat PDF](filepath)
 
 
 
