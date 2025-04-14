@@ -4,7 +4,5 @@ pandas
 scikit-learn
 seaborn
 requests
-prettytable
-plotly
-nbformat
-pandasql
+scipy
+
