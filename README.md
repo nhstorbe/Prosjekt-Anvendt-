@@ -6,6 +6,12 @@ I emnet TDT4114 studentene fått i oppgave å utvikle en applikasjon som henter,
 ![Bilde](/resources/Bilde1.webp)
 Bildet er hentet fra ([Teknologirådet](https://teknologiradet.no/publication/generativ-kunstig-intelligens-og-ytringsfrihet/), 2023)
 
+#
+### Oppgavesett
+Under ligger oppgavene som ble gitt til studentene i dette emnet:
+- [Mappe generell del](/docs/tasks/mappe_generell_del.md)
+- [Mappe 1](/docs/tasks/mappe_del_1.md)
+- [Mappe 2](/docs/tasks/mappe_del_2.md)
 
 #
 ### Metode og besvarelse
@@ -15,12 +21,7 @@ Informasjon for hver mappe:
 - [Mappe 1](/src/Mappe%201/README.md)
 - [Mappe 2](/src/Mappe%202/README.md)
 
-#
-### Oppgavesett
-Under ligger oppgavene som ble gitt til studentene i dette emnet:
-- [Mappe generell del](/docs/tasks/mappe_generell_del.md)
-- [Mappe 1](/docs/tasks/mappe_del_1.md)
-- [Mappe 2](/docs/tasks/mappe_del_2.md)
+
 
 #
 ### KI deklarasjon
