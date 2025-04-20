@@ -4,5 +4,6 @@ pandas
 scikit-learn
 seaborn
 requests
+PrettyTable
 scipy
 
