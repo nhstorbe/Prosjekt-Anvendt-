@@ -6,4 +6,5 @@ seaborn
 requests
 PrettyTable
 scipy
-
+bokeh
+plotly
