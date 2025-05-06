@@ -1,7 +1,7 @@
 # 🌍 Anvendt programmering - TDT4114
 
 ## Bakgrunn for prosjektet
-I emnet TDT4114 studentene fått i oppgave å utvikle en applikasjon som henter, analyserer og visualiserer miljødata fra åpne kilder. Prosjektet skulle utvikle ferdigheter og gi relevant kunnskap innen kompleks datavitenskap. I dagens næringsliv er evnen til å kunne ta i bruk historisk data og prognoser aldeles viktig når det kommer til strategiske beslutninger for virksomheter.
+I emnet [TDT4114](https://www.ntnu.no/studier/emner/TDT4114#tab=omEmnet) har studentene fått i oppgave å utvikle en applikasjon som henter, analyserer og visualiserer miljødata fra åpne datakilder. Prosjektet skulle utvikle ferdigheter og gi relevant kunnskap innen kompleks datavitenskap. I dagens næringsliv er evnen til å kunne ta i bruk historisk data og prognoser aldeles viktig når det kommer til strategiske beslutninger for virksomheter.
 
 ![Bilde](/resources/Bilde1.webp)
 Bildet er hentet fra ([Teknologirådet](https://teknologiradet.no/publication/generativ-kunstig-intelligens-og-ytringsfrihet/), 2023)
