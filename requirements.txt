@@ -10,3 +10,6 @@ bokeh
 plotly
 pandasql
 statsmodels
+nbformat
+nbimporter 
+
