@@ -77,6 +77,7 @@ For å vise frem analysen kan man bruke blant annet tabeller eller grafer. I Fro
 - [Informasjon om mapper](/README.md)
 - [Mappe 1](/src/Mappe%201/README.md)
 - [Mappe 2](/src/Mappe%202/README.md)
+- [Informasjon om tester](/tests/README.md)
 
 
 
