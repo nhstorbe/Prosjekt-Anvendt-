@@ -8,3 +8,5 @@ PrettyTable
 scipy
 bokeh
 plotly
+pandasql
+statsmodels
