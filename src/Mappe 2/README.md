@@ -66,6 +66,7 @@ Tilhørende CSV-filer:
 - [Informasjon om mapper](/README.md)
 - [Mappe 1](/src/Mappe%201/README.md)
 - [Mappe 2](/src/Mappe%202/README.md)
+- [Informasjon om tester](/tests/README.md)
 
 
 
