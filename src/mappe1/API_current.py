@@ -28,7 +28,7 @@ def add_location(place, lat, lon):
 print(locations)
 
 
-#koden lager en JSON fil ut i fra koordinatene som blir puttet inn i linken 
+# Koden lager en JSON fil ut i fra koordinatene som blir puttet inn i linken.
 def make_weatherJSON(place):
 
     if place not in locations.keys():
@@ -53,7 +53,7 @@ def make_weatherJSON(place):
 #make_weatherJSON("Longyearbyen")
 
 
-#sjekker om det er noen hull i datasettet etterpå
+# Sjekker om det er noen hull i datasettet etterpå
 def check_NaN_counter(place):
     data = clean_weather_data(place)
     missing_counts = data.isna().sum()
@@ -65,7 +65,7 @@ def check_NaN_counter(place):
 check_NaN_counter("Tokyo")
 
 
-#rydder manglende verdier med fillna()
+# Rydder manglende verdier med fillna()
 def clean_weather_data(place):
     data = make_weatherJSON(place)
     timeseries = data["properties"]["timeseries"]
@@ -82,7 +82,7 @@ def clean_weather_data(place):
         })
 
     
-    #lager JSON-filen om til en DataFrame (lister)
+    # Lager JSON-filen om til en DataFrame (lister)
     df = pd.DataFrame(lst)
 
     #gjør om "Time" til datetime
@@ -95,3 +95,31 @@ def clean_weather_data(place):
 
 
 clean_weather_data("London")
+
+
+# Sjekker om det er noen hull i datasettet etterpå
+def check_NaN_counter(place):
+    data = clean_weather_data(place)
+    missing_counts = data.isna().sum()
+    
+    print("Antall NaN-verdier per kolonne:")
+    print(missing_counts)
+    return missing_counts
+
+
+check_NaN_counter("Tokyo")
+
+
+# Henter ut temeraturer for de neste 24 timene
+def get_temperatures_24(place):
+    data = make_weatherJSON(place)
+    timeseries = data["properties"]["timeseries"]
+    
+    temperatures = [
+        (entry["time"], entry["data"]["instant"]["details"]["air_temperature"])
+        for entry in timeseries[:24]
+    ]
+    
+    return temperatures
+
+# Get_temperatures_24("Paris")
