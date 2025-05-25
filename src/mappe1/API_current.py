@@ -53,17 +53,6 @@ def make_weatherJSON(place):
 #make_weatherJSON("Longyearbyen")
 
 
-# Sjekker om det er noen hull i datasettet etterpå
-def check_NaN_counter(place):
-    data = clean_weather_data(place)
-    missing_counts = data.isna().sum()
-    
-    print("Antall NaN-verdier per kolonne:")
-    print(missing_counts)
-    return missing_counts
-
-check_NaN_counter("Tokyo")
-
 
 # Rydder manglende verdier med fillna()
 def clean_weather_data(place):
@@ -107,8 +96,6 @@ def check_NaN_counter(place):
     return missing_counts
 
 
-check_NaN_counter("Tokyo")
-
 
 # Henter ut temeraturer for de neste 24 timene
 def get_temperatures_24(place):
@@ -122,4 +109,4 @@ def get_temperatures_24(place):
     
     return temperatures
 
-# Get_temperatures_24("Paris")
+get_temperatures_24("Paris")

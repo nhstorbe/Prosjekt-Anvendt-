@@ -1,11 +1,8 @@
-import sys
-import os
 import unittest
 from unittest.mock import patch, Mock
 
 # Filsti
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scr')))
-from mappe1.API_current import make_weatherJSON, locations
+from mappe1.API_current import make_weatherJSON
 
 
 class TestMakeWeatherJSON(unittest.TestCase):
@@ -49,7 +46,7 @@ class TestMakeWeatherJSON(unittest.TestCase):
 
     def test_make_weatherJSON_invalid_place(self):
         with self.assertRaises(Exception) as context:
-            make_weatherJSON("Asgard")  # Ikke i locations
+            make_weatherJSON("Place with no name")  # Ikke i locations
         self.assertIn("ikke funnet", str(context.exception))
 
 
