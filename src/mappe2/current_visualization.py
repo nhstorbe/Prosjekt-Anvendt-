@@ -1,14 +1,10 @@
 import pandas as pd
-import requests
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 from scipy.stats import norm
-import sys
-import os
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scr')))
-from mappe1.API_current import make_weatherJSON
+import src.mappe1.API_fremtid as API
 
 
 # Listen gir oversikt over hvilke instanser (weather_entry) som er gydlige for JSON-filen
@@ -17,7 +13,7 @@ value_weather_entry = ["Temperatur (C°)", "Fuktighet (%)" ,"Vindhastighet (m/s)
 
 # Lager Dataframes av dataen
 def get_weatherDataframe(place):
-    data = make_weatherJSON(place)
+    data = API.make_weatherJSON(place)
 
     timeseries = data["properties"]["timeseries"]
 
@@ -38,7 +34,7 @@ def get_weatherDataframe(place):
     df.fillna(0, inplace=True)  #erstatter NaN-verdier med 0
     return df
 
-get_weatherDataframe("New York")
+#get_weatherDataframe("New York")
 
 
 
@@ -75,7 +71,7 @@ def get_statistics(place, weather_entry):
 
 
 #get_statistics(locations["New York"][0], "temp") #(feilmelding)
-get_statistics("New York", value_weather_entry[1])
+#get_statistics("New York", value_weather_entry[1])
 
 
 
@@ -104,7 +100,7 @@ def correlation(place, weather_entry1, weather_entry2):
     return string
 
 
-print(correlation("Cape Town", value_weather_entry[0], value_weather_entry[1]))
+#print(correlation("Cape Town", value_weather_entry[0], value_weather_entry[1]))
 
 
 
