@@ -40,33 +40,36 @@ For å vise frem analysen kan man bruke blant annet tabeller eller grafer. I Fro
  
 #
 ### Oppgave 5 - Visualisering
-1) Hvilke spesifikke typer visualiseringer planlegger du å lage for å representere eksempelvis endringer i luftkvalitet og temperaturdata, og hvorfor valgte du disse?
+1) 
+For Temperaturutvikling, Luftfuktighet og vindhastighet tok vi i bruk linjediagram, mens vi tok i bruk et spredningsdiagram for korrelasjonsdiagrammet mellom nedbør og luftfuktighet. Linjedagram ville tillate oss å vise til en utvikling over tid, og vil gjøre det lett å se temperaturutvikling og sesongsvarasjoner. Spredningsdiagrammet har liknende fordeler, men lar oss også se korrelasjon og mønstre. 
 
+2) 
+Begge tillater oppbyggelse av grafer etter egne verdier. Vi brukte for eksempel sns.lineplot og plt.grid, med tilhørende beskrivende kodesnutter for å spesifisere grafutsene. Under def plot_fuktighet brukte vi også begge i kombinasjon for å lage selve plottet med seaborn, for så å videre legge til infromasjon og printe via matplotlib. Viktigs er vel plt.show for å faktisk printe selv grafen. 
 
-2) Hvordan kan Matplotlib og Seaborn brukes til å forbedre forståelsen av de analyserte dataene, og hvilke funksjoner i disse bibliotekene vil være mest nyttige?
+3) 
+Som nevnt under tidligere oppgaver i mappe 1 håndterer vi manglende data ved med en rekke metoder. Disse inkluderer blant annet moving average og liknende metoder, vi tar i bruk forskjellige metoder forskjellige steder i mappen ettersom alle har distinkte fordeler og ulemper. Av den grunn kan vi "tette hull" med relativt riktig infromasjon. Grafene vil derimot ikke være like informative som om vi hadde hatt den manglende dataen. 
 
+4) 
 
-3) Hvordan vil du håndtere og visualisere manglende data i grafene dine for å sikre at de fortsatt er informative?
+Vi tar i bruk Plotly i for å lage en interaktiv graf som viser Historisk og prediktiv nedbør i samme tidsperiode. Å lage en plotly graf er litt mer avansert enn å lage en matlib eller seaborn graf, da den har interaktive funksjoner. Interaktiviteten man får ved å bruke Plotly tillater brukeren å undersøke dataen nærmere uten å ta i bruk kode selv. Den kan også tillate zooming, hover informasjon og endring av hva slags data som vises om en har flere datasett som følger samme akse. For et stegvis forklaring på koden se innlagte kommentarer under def predict_and_plot_nedbør_bar. 
 
-
-4) Kan du beskrive prosessen for å lage interaktive visualiseringer med Widgets, Plotly eller Bokeh, og hvilke fordeler dette kan gi i forhold til statiske visualiseringer?
-
-
-5) Hvordan vil du evaluere effektiviteten av visualiseringene dine i å formidle de viktigste funnene fra dataanalysen til et bredere publikum?
-
+5) 
+Vi synes vi klart og effektivt formidler dataen vi har å presentere gjennom de grafene vi har lagd. Om en skulle sett på videre arbeid kunne vi ha sammenkjørt fargeer for samme data på tvers av grafene, for eksempel bare brukt grønn for luftfuktighet, da det kunne gitt en bedre samlet leserforståelse. 
 
 ### Oppgave 6 - Prediktiv analyse 
-1) Lag minst tre forskjellige typer visualiseringer (f.eks. linjediagrammer, søylediagrammer og scatterplots) for å representere endringer i eksempelvis luftkvalitet og temperaturdata over tid. Forklar valget av visualiseringstype for hver graf.
+1) 
+Se oppgave 6 under FrostAPI.ipynb. ?????
 
-
-2) Implementer visualiseringer ved hjelp av Matplotlib og Seaborn. Inkluder tilpassede akser, titler, og fargepaletter for å forbedre lesbarheten og estetikk.
-
+2) 
+Se oppgave 6 under FrostAPI.ipynb.
 
 3) Demonstrer hvordan manglende data håndteres i visualiseringene. Lag en graf som viser hvordan manglende verdier påvirker datatrender, og diskuter hvordan dette kan påvirke tolkningen av dataene.
 
+????????
 
 4) Skriv en kort evaluering av de utviklede visualiseringene. Diskuter hvilke visualiseringer som var mest effektive for å formidle informasjon, og hvorfor. Reflekter over tilbakemeldinger fra medstudenter eller veileder.
 
+TBD
 
 ### Oppgave 7 - Reflesjonsnotat
 - [Refleksjonsnotat PDF](filepath)
