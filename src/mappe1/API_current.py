@@ -25,7 +25,7 @@ def add_location(place, lat, lon):
 
     return locations
 
-print(locations)
+#print(locations)
 
 
 # Koden lager en JSON fil ut i fra koordinatene som blir puttet inn i linken.
@@ -50,7 +50,7 @@ def make_weatherJSON(place):
     return data
 
 #make_weatherJSON("Løngyearbyen") #(feilmenlding)
-#make_weatherJSON("Longyearbyen")
+make_weatherJSON("London")
 
 
 
@@ -83,7 +83,7 @@ def clean_weather_data(place):
     return df
 
 
-clean_weather_data("London")
+#clean_weather_data("London")
 
 
 # Sjekker om det er noen hull i datasettet etterpå
@@ -109,4 +109,4 @@ def get_temperatures_24(place):
     
     return temperatures
 
-get_temperatures_24("Paris")
+#get_temperatures_24("Paris")
