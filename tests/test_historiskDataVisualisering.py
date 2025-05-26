@@ -1,5 +1,5 @@
 import unittest
-import src.Mappe2.Historisk_data as HD
+import src.mappe2.Historisk_data as HD
 
 
 class TestWeatherPlotting(unittest.TestCase):
