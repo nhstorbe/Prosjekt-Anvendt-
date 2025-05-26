@@ -15,7 +15,7 @@ Besvarelse for oppgave 4, oppgave 5 og oppgave 6:
 - [Datavisualisering av fremtidsrettet data](/src/Mappe%202/data_visualisering_fremtid.ipynb)
 
 Besvarelse for oppgave 7:
-- [Refleksjonsnotat](filepath)
+- [Refleksjonsnotat](/docs/Refleksjonsnotat.pdf)
 
 Tilhørende test filer:
 - [Test av Historisk_data_visualisering](/tests/test_historiskDataVisualisering.py)
@@ -74,7 +74,7 @@ Se oppgave 6 under FrostAPI.ipynb.
 TBD
 
 ### Oppgave 7 - Reflesjonsnotat
-- [Refleksjonsnotat PDF](filepath)
+- [Refleksjonsnotat PDF](/docs/Refleksjonsnotat.pdf)
 
 
 #
