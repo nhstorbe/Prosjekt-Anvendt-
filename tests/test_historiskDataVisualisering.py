@@ -5,7 +5,7 @@ import src.mappe2.Historisk_data as HD
 class TestWeatherPlotting(unittest.TestCase):
 
     def setUp(self):
-        # Eksempeldata
+        # Testdata for gyldig og ugyldig JSON
         self.valid_json = {
             "data": [
                 {
