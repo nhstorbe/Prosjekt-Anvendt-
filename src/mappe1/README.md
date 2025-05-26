@@ -12,16 +12,24 @@ Bildet er hentet fra ([AlphaTarget](https://alphatarget.com/resources/a-primer-o
 Gruppen har valgt å dele alle oppgavene i to deler, da analysen gjennomføres med to ulike datasett: historiske data og fremtidsrettet data. Begge datasettene er hentet fra Yr.no og analyseres separat. Oppgavene og implementeringen er dokumentert i følgende filer: 
 
 Besvarelse for oppgave 1:
-- [Testing av utviklingsmiljø](../Mappe%201/utviklingsmiljø.ipynb)
+- [Testing av utviklingsmiljø](/src/mappe1/utviklingsmiljø.ipynb)
 
 Besvarelse for oppgave 2 og oppgave 3:
-- [Databehandling av historisk data](/src/Mappe%201/data_behandling_historisk.ipynb)
-- [Databehandling av fremtidsrettet data](/src/Mappe%201/data_behandling_fremtid.ipynb)
+- [Databehandling av historisk data](/src/mappe1/data_behandling_historisk.ipynb)
+- [Databehandling av fremtidsrettet data](/src/mappe1/data_behandling_fremtid.ipynb)
+
+Overføring til python for testing:
+- [Databehandling av historisk data](/src/mappe1/API_historisk.py)
+- [Databehandling av fremtidsrettet data](/src/mappe1/API_fremtid.py)
+
+Tilhørende test filer:
+- [Test for historisk data](/tests/test_APIhistorisk.py)
+- [Test for fremtidig data](/tests/test_APIfremtid.py)
 
 Tilhørende CSV-filer:
-- [CSV tabel - Oslo](/data/Oslo.csv)
-- [CSV tabel - Tromsø](/data/Tromsø.csv)
-- [CSV tabel - Stryn](/data/Stryn.csv)
+- [Værdata i csv format](/data/weather_data.csv)
+
+
 
 
 #

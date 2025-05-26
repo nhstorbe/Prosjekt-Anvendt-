@@ -1,7 +1,7 @@
 import unittest
 
 # Filsti til funksjonen som skal testes
-from mappe1.API_current import make_weatherJSON
+from src.mappe1.API_current import make_weatherJSON
 
 class TestMakeWeatherJSON(unittest.TestCase):
 
