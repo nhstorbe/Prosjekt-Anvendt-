@@ -35,6 +35,8 @@ Tilhørende CSV-filer:
 #
 ### Oppgave 2 - Datainnsamling
 
+[Url til git repository:](https://github.com/nhstorbe/Prosjekt-Anvendt-)
+
 1) På internett finnes det en stor mengde brukbare kilder på relevant data for værmeldinger. Gruppen har valgt å bruke værdata fra [Yr.no](https://hjelp.yr.no/hc/no/articles/206550539-Om-Yr) for å løse alle oppgavene i prosjektet. Yr.no drives i samarbeid mellom NRK og Meteorologisk institutt, og anses som en pålitelig datakilde ettersom begge aktørene er statlige institusjoner. 
 
 2) For valg av dataformat, gav Yr.no mulighet for å velge mellom ulike formater for nedlastning av data. Det var mulig å brke blant annet JSON-filer, CSV-filer og XML-filer.For den historiske dataen ble CSV-filer benyttet, ettersom dette formatet var lett tilgjengelig fra Yr og enkelt å integrere med Pandas.

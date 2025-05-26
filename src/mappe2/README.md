@@ -17,12 +17,10 @@ Besvarelse for oppgave 4, oppgave 5 og oppgave 6:
 Besvarelse for oppgave 7:
 - [Refleksjonsnotat](filepath)
 
-Tilhørende CSV-filer:
-- [CSV tabel - Oslo](/data/Oslo.csv)
-- [CSV tabel - Tromsø](/data/Tromsø.csv)
-- [CSV tabel - Stryn](/data/Stryn.csv)
-
-
+Tilhørende test filer:
+- [Test av Historisk_data_visualisering](/tests/test_historiskDataVisualisering.py)
+- [Test av prediktiv_analyse](/tests/test_prediktivAnalyse.py)
+- [Test av current_visualization](/tests/test_fremtidDataVisualisering.py)
 
 #
 ### Oppgave 4 - Dataanalyse
@@ -38,6 +36,8 @@ Dersom skjevhet finnes i datanen kommer det av naturlige fenomen. Skjevhet treng
 4) 
 For å vise frem analysen kan man bruke blant annet tabeller eller grafer. I FrostAPI oppgave 4 brukte visualiseres datene i en tabell, mens med de fremtidige dataene brukte vi først tabell og så graf. Data i ferdig analysert form burde alltid presenteres for lettest forståelse. Grafer vil tillate lettere presentasjon av data over en tidsperiode, samt små tabeller tillater en å lettere finne relevant utregnet data. Vi valgt grafer og tabeller om hverandre for leselighet, og for å skape en kontekst der nødvendig. Er det mer enn en dimensjon til dataene som presenteres burde den derimot ta i bruk graf nesten uavhengig for å vise til mulige samhold mellom datapunkter. 
  
+
+
 #
 ### Oppgave 5 - Visualisering
 1) 
@@ -58,9 +58,11 @@ Vi synes vi klart og effektivt formidler dataen vi har å presentere gjennom de 
 
 ### Oppgave 6 - Prediktiv analyse 
 1) 
+[Prediktiv analyse](/src/mappe2/data_visulisering_historisk.ipynb)
 Se oppgave 6 under FrostAPI.ipynb. ?????
 
 2) 
+[Prediktiv analyse](/src/mappe2/data_visulisering_historisk.ipynb)
 Se oppgave 6 under FrostAPI.ipynb.
 
 3) Demonstrer hvordan manglende data håndteres i visualiseringene. Lag en graf som viser hvordan manglende verdier påvirker datatrender, og diskuter hvordan dette kan påvirke tolkningen av dataene.
