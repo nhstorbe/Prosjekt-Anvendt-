@@ -61,14 +61,12 @@ Se oppgave 6 under data_visualisering_historisk. Som en kan se bruker vi forskje
 
 2) 
 [data_visualisering_historisk](/src/mappe2/data_visulisering_historisk.ipynb)
-Se oppgave 6 under data_visualisering_historisk.
+Se oppgave 6 under data_visualisering_historisk. Grafene våre viser en variasjon som kan refere til dag/natt syklus i temperatur, og gir en høyestemålig på 13-14 grader på dagtid og et lavmål på 4-6 grader på nattestid i perioden 27/5-3/6. Disse tallene faller relativt nærme de presentert av yr.no for samme periode. Det er noen problemer i hvor drastiske svingningene er, men over en ukes-perioder virker dataene mer tilstrekkelige. Vi tenker temperaturutviklingen i Oslo er god fra opplevelsesperspektiv. Derimot vil en også måtte ta i betraktning at vi henter data fra blindern, da potensielt fra et boligfelt i en storby. Av den grunn vil temperatursvingninger være redusert grunnet den store mengden lekkende varme fra menneskelig aktivitet og de ombringenede husstandene. 
 
-3) Demonstrer hvordan manglende data håndteres i visualiseringene. Lag en graf som viser hvordan manglende verdier påvirker datatrender, og diskuter hvordan dette kan påvirke tolkningen av dataene.
+3) 
+Vi henter data fra meget politelige kilder og tar i bruk funksjoner med evne til å oppdage hull i datasettet. Vi har ikke opplevd dette problemet enda grunnet disse faktorene. Av den grunn forsøkte vi å skape en graf hvor vi med vilje har fjernet deler av datasettet. Vi beste oss for å ikke beholde denne da den ikke ga noe særlig. Selv med 20% av datapunktene tilfeldig fjernet var prognosen knapt påvirket. Vi antar at grunnen til det er den relativte tettheten til de eksisterende datapunktene. En reduksjon på 20% fra tilnærmet 9000 datapunkter vil ha lav sjanse til å lede til større utslag ved å fjerne en relativt større andel av de lave eller høye uteliggerne relativt til et datasett på 20 punkt. Et mer konsentrert utslag over en viss periode, typ å fjerne 20 dager med informasjon, hadde liknende resultat. 
 
-Vi henter data fra meget politelige kilder og tar i bruk funksjoner med evne til å oppdage hull i datasettet. Vi har ikke opplevd dette problemet enda grunnet disse faktorene. Av den grunn har vi skapt en graf hvor vi med vilje har fjernet deler av datasettet. 
-
-4) Skriv en kort evaluering av de utviklede visualiseringene. Diskuter hvilke visualiseringer som var mest effektive for å formidle informasjon, og hvorfor. Reflekter over tilbakemeldinger fra medstudenter eller veileder.
-
+4) 
 Vi ser at linjegrafer i deres simplisitet kombinert med plotly sin interaktivitet som ledet til best informasjonsformidling. Ettersom linjegrafene er simple er det lett å lese av data fra dem og forstå hva de viser. Når en måler vær måler en også kontinuerlig, noe denne graftypen representerer godt. Ved å introdusere plotly sin interaktivitet vil man da også legge til en funksjon som tillater økt datamengde per graf. Siden grafen vil kunne endres i henhold til brukerens ønsker kan en også lettere se sammenhenger mellom datapunktene en ønsker å undersøke. Vi har diskutert saken med flere av vår medstudenter, og de har sagt seg vel enige. enkelte mente at scatterplot kunne ta seg bedre ut, men grunnet at de ikke er kontinuerlig mener vi linjegrafer er best for det ønskede formålet. 
 
 ### Oppgave 7 - Reflesjonsnotat
