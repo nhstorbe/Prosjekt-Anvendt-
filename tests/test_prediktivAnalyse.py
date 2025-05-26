@@ -2,7 +2,7 @@ import unittest
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-import src.Mappe2.PrediktivAnalyse as PA
+import src.mappe2.PrediktivAnalyse as PA
 
 
 class WeatherModelTest(unittest.TestCase):
