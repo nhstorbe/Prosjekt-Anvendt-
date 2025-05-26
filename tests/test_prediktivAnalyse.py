@@ -2,6 +2,12 @@ import unittest
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+import os
+import sys
+
+project_root = os.path.abspath(os.path.join(__file__, '..', '..'))
+sys.path.insert(0, project_root)
+
 import src.mappe2.PrediktivAnalyse as PA
 
 

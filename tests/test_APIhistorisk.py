@@ -1,8 +1,12 @@
 import unittest
 import pandas as pd
 from io import StringIO
-import sys
 import os
+import sys
+
+project_root = os.path.abspath(os.path.join(__file__, '..', '..'))
+sys.path.insert(0, project_root)
+
 import src.mappe1.API_historisk as API
 
 class TestAPI(unittest.TestCase):

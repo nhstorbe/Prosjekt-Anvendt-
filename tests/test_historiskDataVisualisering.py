@@ -1,4 +1,10 @@
 import unittest
+import os
+import sys
+
+project_root = os.path.abspath(os.path.join(__file__, '..', '..'))
+sys.path.insert(0, project_root)
+
 import src.mappe2.Historisk_data as HD
 
 

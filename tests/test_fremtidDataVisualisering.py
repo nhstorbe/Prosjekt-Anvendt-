@@ -5,6 +5,12 @@ from datetime import datetime
 import matplotlib
 matplotlib.use('Agg')  # Forhindrer at plt.show() åpner vindu under test
 
+import os
+import sys
+
+project_root = os.path.abspath(os.path.join(__file__, '..', '..'))
+sys.path.insert(0, project_root)
+
 import src.mappe2.current_visualization as fun
 
 # lager en Mock() JSON som gjør at vi ikke er avhengig av API-dataen
