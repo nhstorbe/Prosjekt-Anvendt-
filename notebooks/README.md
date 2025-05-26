@@ -18,7 +18,7 @@ Mappen inneholder CVS tabellen [weather_data](/data/weather_data.csv). Denne fil
 
 #
 ### 2. docs
-Mappen inneholder to undermapper. Den første mappen heter "AI", og tar for seg [AI deklarasjon](filepath). Den andre mappen heter "tasks" og viser til tre filer som besrkvier oppgavene som ble gitt av foreleser.
+Mappen inneholder to undermapper. Den første mappen heter "AI", og tar for seg [AI deklarasjon](filepath). Den andre mappen heter "tasks" og viser til tre filer som besrkvier oppgavene som ble gitt av foreleser. I tillegg har vi lagt inn [refleksjonsnotat](/docs/Refleksjonsnotat.pdf) og [gitlogs](/docs/Gitlog.pdf) i denne mappen.
 
 #
 ### 3. notebooks
