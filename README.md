@@ -39,6 +39,6 @@ Informasjon om oppbygging av filstruktur kan leses under denne linken:
 
 #
 ### Konklusjon
-Oppsummert synes gruppen at det har vært et veldig spennende prosjekt. Vi har fått lært nytt fagstoff i et interresant fagfelt. Samtidig har vi blitt vist hvordan denne kunnskapen kan tas i bruk for å skape gode løsninger og godt håndtere data. Å få en bedre forståelse av effektiv datahåndtering har også vært et svært brukbart læringspunkt. Transformasjonen av daten fra rå .csv og .Json filer til ferdige grafer har vært svært interresant å gjennomføre. Lorem Ipsum?????????
+Oppsummert synes gruppen at det har vært et veldig spennende prosjekt. Vi har fått lært nytt fagstoff i et interresant fagfelt. Samtidig har vi blitt vist hvordan denne kunnskapen kan tas i bruk for å skape gode løsninger og godt håndtere data. Å få en bedre forståelse av effektiv datahåndtering har også vært et svært brukbart læringspunkt. Transformasjonen av daten fra rå .csv og .Json filer til ferdige grafer har vært svært interresant å gjennomføre. Spesielt prediktive analyser var interresante å gjennomføre, noe vi føler vi begynner å få god kontroll over. Alt i alt var det en svært spennende anledning til å teste tekniske grenser og utføre et spennende prosjekt som brøt ny grunn for oss alle. 
 
 

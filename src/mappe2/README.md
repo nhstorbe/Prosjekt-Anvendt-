@@ -56,20 +56,20 @@ Vi synes vi klart og effektivt formidler dataen vi har å presentere gjennom de 
 
 ### Oppgave 6 - Prediktiv analyse 
 1) 
-[Prediktiv analyse](/src/mappe2/data_visulisering_historisk.ipynb)
-Se oppgave 6 under FrostAPI.ipynb. ?????
+[data_visualisering_historisk](/src/mappe2/data_visulisering_historisk.ipynb)
+Se oppgave 6 under data_visualisering_historisk. Som en kan se bruker vi forskjellige graftyper for å representere forskjellige typer data. Når en viss graftype er tatt i bruk er det fordi vi mener dataen presenteres på best mulig måte gjennom den graftypen. For eksempel vil en kunne se data presentert på samme måte i både linjediagram og scatterplot-diagram. Av den grunn har vi tatt i bruk de nødvendige diagramtypene der de er mest naturlige. I noen tilfeller tillater det mindre variasjon enn ønsket, men det har kommet på bekostning av leselighet, og der med brukervennlighet. 
 
 2) 
-[Prediktiv analyse](/src/mappe2/data_visulisering_historisk.ipynb)
-Se oppgave 6 under FrostAPI.ipynb.
+[data_visualisering_historisk](/src/mappe2/data_visulisering_historisk.ipynb)
+Se oppgave 6 under data_visualisering_historisk.
 
 3) Demonstrer hvordan manglende data håndteres i visualiseringene. Lag en graf som viser hvordan manglende verdier påvirker datatrender, og diskuter hvordan dette kan påvirke tolkningen av dataene.
 
-????????
+Vi henter data fra meget politelige kilder og tar i bruk funksjoner med evne til å oppdage hull i datasettet. Vi har ikke opplevd dette problemet enda grunnet disse faktorene. Av den grunn har vi skapt en graf hvor vi med vilje har fjernet deler av datasettet. 
 
 4) Skriv en kort evaluering av de utviklede visualiseringene. Diskuter hvilke visualiseringer som var mest effektive for å formidle informasjon, og hvorfor. Reflekter over tilbakemeldinger fra medstudenter eller veileder.
 
-TBD
+Vi ser at linjegrafer i deres simplisitet kombinert med plotly sin interaktivitet som ledet til best informasjonsformidling. Ettersom linjegrafene er simple er det lett å lese av data fra dem og forstå hva de viser. Når en måler vær måler en også kontinuerlig, noe denne graftypen representerer godt. Ved å introdusere plotly sin interaktivitet vil man da også legge til en funksjon som tillater økt datamengde per graf. Siden grafen vil kunne endres i henhold til brukerens ønsker kan en også lettere se sammenhenger mellom datapunktene en ønsker å undersøke. Vi har diskutert saken med flere av vår medstudenter, og de har sagt seg vel enige. enkelte mente at scatterplot kunne ta seg bedre ut, men grunnet at de ikke er kontinuerlig mener vi linjegrafer er best for det ønskede formålet. 
 
 ### Oppgave 7 - Reflesjonsnotat
 - [Refleksjonsnotat PDF](/docs/Refleksjonsnotat.pdf)
