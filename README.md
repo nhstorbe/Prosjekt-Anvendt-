@@ -29,7 +29,7 @@ Informasjon for hver mappe:
 
 #
 ### Refleksjonsnotat
-- [Refleksjonsnotat PDF](filepath)
+- [Refleksjonsnotat PDF](/docs/Refleksjonsnotat.pdf)
 
 
 
