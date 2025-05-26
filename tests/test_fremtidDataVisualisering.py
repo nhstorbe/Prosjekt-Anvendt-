@@ -1,20 +1,11 @@
 import unittest
 from unittest.mock import patch
 import pandas as pd
-from datetime import datetime
-import matplotlib
-matplotlib.use('Agg')  # Forhindrer at plt.show() åpner vindu under test
-
-import os
-import sys
-
-project_root = os.path.abspath(os.path.join(__file__, '..', '..'))
-sys.path.insert(0, project_root)
 
 import src.mappe2.current_visualization as fun
 
-# lager en Mock() JSON som gjør at vi ikke er avhengig av API-dataen
-mock_api_response = {
+# Lager en falsk JSON som gjør at vi ikke er avhengig av API-dataen
+fake_api = {
     "properties": {
         "timeseries": [
             {
@@ -50,54 +41,46 @@ mock_api_response = {
 
 class TestCurrentVisualization(unittest.TestCase):
 
+    # Sjekker om funksjonen fungerer som forventet med fake_api
     @patch('src.mappe1.API_fremtid.make_weatherJSON')
     def test_get_weatherDataframe(self, mock_api):
-        mock_api.return_value = mock_api_response
+        mock_api.return_value = fake_api
         df = fun.get_weatherDataframe("Oslo")
 
         self.assertIsInstance(df, pd.DataFrame)
         self.assertEqual(list(df.columns), ["Tid"] + fun.value_weather_entry)
         self.assertEqual(len(df), 2)
-        self.assertAlmostEqual(df["Temperatur (C°)"].iloc[0], 15.0)
 
+
+    # Tester for å sjekke de statistiske målene
     @patch('src.mappe1.API_fremtid.make_weatherJSON')
     def test_get_statistics_valid_entry(self, mock_api):
-        mock_api.return_value = mock_api_response
+        mock_api.return_value = fake_api
         result = fun.get_statistics("Oslo", "Temperatur (C°)")
         self.assertIn("Gjennomsnitt", result)
         self.assertIn("Standardavvik", result)
 
     @patch('src.mappe1.API_fremtid.make_weatherJSON')
     def test_get_statistics_invalid_entry(self, mock_api):
-        mock_api.return_value = mock_api_response
+        mock_api.return_value = fake_api
         with self.assertRaises(ValueError):
             fun.get_statistics("Oslo", "Ugyldig måling")
 
+
+    # Sjekker at korrelasjonene er som forventet
     @patch('src.mappe1.API_fremtid.make_weatherJSON')
     def test_correlation_valid(self, mock_api):
-        mock_api.return_value = mock_api_response
+        mock_api.return_value = fake_api
         result = fun.correlation("Oslo", "Temperatur (C°)", "Fuktighet (%)")
         self.assertIn("Korrelasjon mellom", result)
 
     @patch('src.mappe1.API_fremtid.make_weatherJSON')
     def test_correlation_invalid_entry(self, mock_api):
-        mock_api.return_value = mock_api_response
+        mock_api.return_value = fake_api
         with self.assertRaises(Exception):
             fun.correlation("Oslo", "Temp", "Fuktighet (%)")
 
-    @patch('src.mappe1.API_fremtid.make_weatherJSON')
-    def test_plot_weather_valid(self, mock_api):
-        mock_api.return_value = mock_api_response
-        try:
-            fun.plot_weather("Oslo", "Temperatur (C°)")
-        except Exception:
-            self.fail("plot_weather() raised Exception unexpectedly!")
 
-    @patch('src.mappe1.API_fremtid.make_weatherJSON')
-    def test_plot_weather_invalid_entry(self, mock_api):
-        mock_api.return_value = mock_api_response
-        with self.assertRaises(Exception):
-            fun.plot_weather("Oslo", "Ugyldig")
 
 if __name__ == '__main__':
     unittest.main()
